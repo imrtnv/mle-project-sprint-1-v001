@@ -11,4 +11,3 @@ docker compose up --build
 Результаты модели - part2_dvc/cv_results/cv_res.json
 
 dvc pipline - /home/mle-user/mle_projects/mle-project-sprint-1-v001/part2_dvc
-
