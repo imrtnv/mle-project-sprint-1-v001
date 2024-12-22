@@ -1,0 +1,7 @@
+{
+    "fit_time": 0.351,
+    "score_time": 0.048,
+    "test_neg_mean_squared_error": -9917361593018.355,
+    "test_neg_mean_absolute_error": -2360308.687,
+    "test_r2": 0.524
+}
