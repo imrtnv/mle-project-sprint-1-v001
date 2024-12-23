@@ -14,8 +14,7 @@ def evaluate_model():
         params = yaml.safe_load(fd)
 
     data = pd.read_csv('data/initial_data.csv')
-    data = data.drop(columns=['id', 'building_id'], errors='ignore')
-
+    
     # Разделение данных на X и y
     X = data.drop(columns=params['target_col'])
     y = data[params['target_col']]

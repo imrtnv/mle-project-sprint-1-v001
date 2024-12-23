@@ -74,7 +74,7 @@ def prepare_predict_price_clean_dataset():
     def transform(df: pd.DataFrame) -> pd.DataFrame:
         def remove_duplicates(data):
             feature_cols = data.columns.drop(['id','price','building_id']).tolist()
-            is_duplicated_features = data.duplicated(subset=feature_cols, keep=False)
+            is_duplicated_features = data.duplicated(subset=feature_cols, keep='first')
             data = data[~is_duplicated_features].reset_index(drop=True)
             return data 
      

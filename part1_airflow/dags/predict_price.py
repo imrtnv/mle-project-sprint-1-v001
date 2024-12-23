@@ -65,7 +65,7 @@ def prepare_predict_price_dataset():
         sql = """
         select f.*, b.build_year, b.building_type_int, b.latitude, b.longitude, b.ceiling_height, b.flats_count, b.floors_total, b.has_elevator
         from flats f
-        inner join buildings b
+        left join buildings b
         on b.id=f.building_id
         """
         data = pd.read_sql(sql, conn)
